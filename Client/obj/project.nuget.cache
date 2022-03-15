@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "hLdrR2uDjE3waGO0sa8bClQFdBc1I0SebRzw8h4bL+wPgP+2PEp0P/c+NRWxuTHecthFawd02L3+eVkb7RgcPw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\GiovanniRodriguez\\source\\repos\\ZgRPC\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GiovanniRodriguez\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
+    "C:\\Users\\GiovanniRodriguez\\.nuget\\packages\\grpc.core\\2.44.0\\grpc.core.2.44.0.nupkg.sha512",
+    "C:\\Users\\GiovanniRodriguez\\.nuget\\packages\\grpc.core.api\\2.44.0\\grpc.core.api.2.44.0.nupkg.sha512",
+    "C:\\Users\\GiovanniRodriguez\\.nuget\\packages\\grpc.tools\\2.44.0\\grpc.tools.2.44.0.nupkg.sha512",
+    "C:\\Users\\GiovanniRodriguez\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

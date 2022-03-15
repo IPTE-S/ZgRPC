@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+package ZgRPC;
+
+message Persona{
+	string nombre = 1;
+	string apellido = 2;
+	string email = 3;
+}
+
+message PersonaRequest {
+	Persona persona = 1;
+}
+
+message PersonaResponse {
+	string resultado = 1;
+}
+
+message ServerMultiplePersonaRequest {
+	Persona persona = 1;
+}
+
+message ServerMultiplePersonaResponse {
+	string resultado = 1;
+}
+
+message ClientMultiplePersonaRequest {
+	Persona persona = 1;
+}
+
+message ClientMultiplePersonaResponse {
+	string resultado = 1;
+}
+
+
+message BidereccionalPersonaRequest {
+	Persona persona = 1;
+}
+
+message BidereccionalPersonaResponse {
+	string resultado = 1;
+}
+
+service PersonaService{
+
+//gRPC Unary
+rpc RegistrarPersona(PersonaRequest) returns (PersonaResponse){}
+
+//gRPC ServerStreaming
+
+rpc RegistrarPersonasServidorMultiple(ServerMultiplePersonaRequest) returns (stream ServerMultiplePersonaResponse){}
+
+//gRPC Client Streaming
+
+rpc RegistrarPersonaClientMultiple(stream ClientMultiplePersonaRequest) returns (ClientMultiplePersonaResponse){}
+
+//gRPC Bidireccional
+
+rpc RegistrarPersonaBidirecional(stream BidereccionalPersonaRequest) returns (stream BidereccionalPersonaResponse){}
+
+}

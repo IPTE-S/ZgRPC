@@ -1,0 +1,2 @@
+model/ServiceCode.cs \
+model/ServiceCodeGrpc.cs: ../serviceCode.proto
